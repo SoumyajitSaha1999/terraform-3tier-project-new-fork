@@ -4,5 +4,5 @@ variable "db_username" {}
 variable "db_password" {}
 variable "db_name" {}
 variable "sg_ids" { type = list(string) }
-variable "multi_az" { default = true }
+variable "multi_az" { default = false }
 variable "instance_class" { default = "db.t3.micro" }
