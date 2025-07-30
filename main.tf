@@ -44,6 +44,3 @@ module "db" {
   instance_class     = var.db_instance_class
 }
 
-output "web_alb_dns" {
-  value = module.web.alb_dns
-}
