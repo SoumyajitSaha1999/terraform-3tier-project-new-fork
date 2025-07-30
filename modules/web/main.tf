@@ -50,7 +50,7 @@ resource "aws_lb_listener" "web" {
 
 resource "aws_autoscaling_attachment" "web_tg" {
   autoscaling_group_name = aws_autoscaling_group.web.name
-  alb_target_group_arn   = aws_lb_target_group.web.arn
+  lb_target_group_arn   = aws_lb_target_group.web.arn
 }
 
 output "alb_dns" {
