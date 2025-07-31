@@ -18,7 +18,7 @@ resource "aws_db_instance" "this" {
   skip_final_snapshot  = true
   publicly_accessible  = false
   backup_retention_period = 7
-  deletion_protection  = true
+  deletion_protection  = false
 }
 
 output "db_endpoint" {
